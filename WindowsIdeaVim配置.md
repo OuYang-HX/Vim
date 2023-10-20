@@ -4,6 +4,7 @@ set hlsearch
 set number relativenumber
 "set keep-english-in-normal-and-restore-in-insert
 set commentary
+set wrap
 inoremap jj <Esc>
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>
@@ -18,3 +19,5 @@ nnoremap mk kddpk
 " 将一行向下移动
 inoremap mj <Esc>ddp
 nnoremap mj ddp
+"共享剪切板
+set clipboard+=unnamed
