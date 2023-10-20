@@ -21,7 +21,16 @@
     // 突出显示与当前搜索匹配的所有文本
     "vim.hlsearch": true,
       // 普通模式下的非递归按键绑定
-    "vim.normalModeKeyBindingsNonRecursive": [],
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["m", "k"],
+        "after": ["d", "d", "k", "P"]
+      },
+      {
+        "before": ["m", "j"],
+        "after": ["d", "d", "j", "P"]
+      }
+    ],
       // 插入模式下的非递归按键绑定
     "vim.insertModeKeyBindings": [
       {
@@ -55,12 +64,19 @@
       {
         "before": ["<C-e>"],
         "after": ["<End>"]
+      },
+      {
+        "before": ["m", "k"],
+        "after": ["<Esc>", "d", "d", "k", "P"]
+      },
+      {
+        "before": ["m", "j"],
+        "after": ["<Esc>", "d", "d", "j", "P"]
       }
     ],
     // 命令模式下的非递归按键绑定
     "vim.commandLineModeKeyBindingsNonRecursive": [
-      
-    
+     
     ],
     // 可视模式下的非递归按键绑定
     "vim.operatorPendingModeKeyBindings": [],
@@ -73,6 +89,7 @@
     "explorer.confirmDelete": false,
     "vscode-office.openOutline": false,
     "vim.commandLineModeKeyBindings": [
+    
 
 
     ],
@@ -89,9 +106,9 @@
     "workbench.colorTheme": "One Dark Modern",
     "workbench.iconTheme": "office-material-icon-theme",
     "markdown-preview-enhanced.previewTheme": "atom-light.css",
-
-    "vim.autoSwitchInputMethod.enable": true,
     "vim.autoSwitchInputMethod.defaultIM": "1033",
     "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\im-select\\im-select.exe", 
-    "vim.autoSwitchInputMethod.switchIMCmd": "C:\\im-select\\im-select.exe {im}"
+    "vim.autoSwitchInputMethod.switchIMCmd": "C:\\im-select\\im-select.exe {im}",
+    "vim.autoSwitchInputMethod.enable": true,
+    "redhat.telemetry.enabled": true
 }
